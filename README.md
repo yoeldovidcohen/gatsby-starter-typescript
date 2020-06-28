@@ -52,7 +52,7 @@ See `src/components/image.tsx` (or the excerpt below) for an example of how to t
 ```tsx
 // src/components/image.tsx
 
-import { ImageQuery } from "../../graphql-types"
+import { ImageQuery } from "../../graphql-types";
 
 export const imageQuery = graphql`
   query Image {
@@ -64,15 +64,15 @@ export const imageQuery = graphql`
       }
     }
   }
-`
+`;
 
 const Image = () => {
-  const data = useStaticQuery(imageQuery) as ImageQuery
+  const data = useStaticQuery(imageQuery) as ImageQuery;
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+};
 
-export default Image
+export default Image;
 ```
 
 GraphQL queries in `gatsby-node.ts` are also supported. After writing your query, you may need to restart your gatsby development server before you can import the automatically generated type. You must name any queries in `gatsby-node.ts` for them to be picked up by the code generator.
@@ -80,7 +80,7 @@ GraphQL queries in `gatsby-node.ts` are also supported. After writing your query
 ```ts
 // gatsby-node.ts
 
-import { ArticleQuery } from "./graphql-types"
+import { ArticleQuery } from "./graphql-types";
 
 const { data: articleData }: { data?: ArticleQuery } = await graphql(`
   query Article {
@@ -92,5 +92,5 @@ const { data: articleData }: { data?: ArticleQuery } = await graphql(`
       }
     }
   }
-`)
+`);
 ```

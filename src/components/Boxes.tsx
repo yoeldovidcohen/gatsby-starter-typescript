@@ -6,9 +6,12 @@ const Boxes = styled.div`
   height: 100vh;
   width: 100vw;
   /* grid-column: 100%; */
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 20% 40% 40%;
   /* grid-template-columns: 5vw 90vw 5vw; */
-  grid-template-areas: "header" "content";
+  grid-template-areas:
+    "header"
+    " b "
+    "content";
 `;
 
 export default Boxes;

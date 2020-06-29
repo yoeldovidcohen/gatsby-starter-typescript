@@ -5,6 +5,7 @@ import ContentBox from "../components/ContentBox";
 import Heading from "../components/Heading";
 import Reset from "../components/Reset";
 import ContentItem from "../components/ContentItem";
+import BB from "../components/BB";
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
         <HeaderBox>
           <Heading>daily draw</Heading>
         </HeaderBox>
+        <BB>hi</BB>
         <ContentBox>
           <ContentItem>
             <h1>Suport Avraychim</h1>

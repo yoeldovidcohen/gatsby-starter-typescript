@@ -5,13 +5,15 @@ const ContentItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: orange; */
+  background-color: lightgray;
   height: 90%;
   width: 90%;
   text-align: center;
-  /* border: solid; */
-  /* border-radius: 15px; */
-  margin: auto;
+  /* outline: solid;
+  outline-offset: -10px; */
+  border: solid;
+  border-radius: 15px;
+  margin: 0.5rem 0.5rem;
 `;
 
 export default ContentItem;

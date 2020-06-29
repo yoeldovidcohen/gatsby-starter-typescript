@@ -13,7 +13,7 @@ const ContentItem = styled.div`
   outline-offset: -10px; */
   border: solid;
   border-radius: 15px;
-  margin: 0.5rem 0.5rem;
+  margin: 0.15rem 0.15rem;
 `;
 
 export default ContentItem;

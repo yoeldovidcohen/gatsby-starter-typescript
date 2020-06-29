@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const ContentItem = styled.div`
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
